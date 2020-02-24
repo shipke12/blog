@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<style>
+    @media screen and (max-width:1100px) {
+        .newpost {
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 5%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .newpost {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        .newpost {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        .navigation {
+            font-size: 20pt;
+        }
+    }
+</style>
+<body>
+    <h1>
+        Blog Posts
+    </h1>
+    <div class="navigation">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blogposts.html">Blog Posts</a>
+        </nav>
+    </div>
+    <div class="newpost">
+        <h1>What is Responsive Web Design?</h1>
+        <h5><a href="https://www.w3schools.com/whatis/whatis_responsive.asp">w3schools.com/whatis/whatis_responsive.asp</a><br />Sarah Hipke</h5>
+        <div id="date">
+            <h5>2/16/2020</h5>
+        </div>
+        <p>
+            Responsive web design is a design meant for automatically resizing your website depending on the device and browser it is being accessed in. W3Schools explained a method of using media queries. These queries act as breakpoints in the page for when the site needs to resize. They work in real time as the user makes the window smaller or larger.
+        </p><br />
+        <div class="box">
+            <p>
+                &#60;style&#62;<br />
+                .left, .right {<br />
+                float: left;<br />
+                width: 20%; /* The width is 20%, by default */<br />
+                }<br />
+                <br />
+                .main {<br />
+                float: left;<br />
+                width: 60%; /* The width is 60%, by default */<br />
+                }<br />
+                <br />
+                /* Use Media Query to add a breakpoint at 800px: */<br />
+                @media screen and (max-width:800px) {<br />
+                .left , .main, .right {width:100%;}<br />
+                }<br />
+                &#60;/style&#62;
+            </p>
+        </div>
+        <p>
+            <br />Images are often affected with resizing windows as well, and there are a few different ways of having them adjust. An easy way to ensure the image resizes perfectly every time in any browser is to set the width to a percentage. It will automatically adjust the picture and height keeping the aspect ratio in tact. Otherwise, using the picture element let's you change the picture to another at certain window sizes. The article made sure to mention Bootstrap as a tool used to make responsive webpages as it combines HTML, CSS and jQuery all into one.
+        </p>
+        <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-illustration.png" style="width: 95%; margin: 20px;">
+    </div>
+</body>
+</html>
